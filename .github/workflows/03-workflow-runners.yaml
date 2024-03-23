@@ -22,7 +22,6 @@ jobs:
         runs-on: mac-latest
         steps:
             - name: Show OS
-              shell: bash
               run: |
                 echo "Running on windows latest"
                 echo "Runner OS $RUNNER_OS"         
