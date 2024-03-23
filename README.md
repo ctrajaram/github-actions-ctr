@@ -1,5 +1,5 @@
 Repository containing all examples and code for github actions 
-3/23
+3/23/2024
 Here are the instructions for the exercise:
 
 Create a file named 01-building-blocks.yaml under the .github/workflows folder in the root of your repository.
