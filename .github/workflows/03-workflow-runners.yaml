@@ -4,5 +4,7 @@ jobs:
     ubuntu-echo:
         runs-on: ubuntu-latest
         steps:
-            - name: fist step
-              run: echo "first step. Triggered by event name -> ${{ github.event_name}}"  
+            - name: Show OS
+              run: |
+                echo "This job is running on an Ubuntu runner."
+                echo "Runner OS : $RUNNER_OS"  
