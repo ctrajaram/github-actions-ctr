@@ -1,10 +1,10 @@
 name: 01- Building Blocks
 on: 
     workflow_dispatch:
-    push:
-        branches:
-                - main
-                - master
+    # push:
+    #     branches:
+    #             - main
+    #             - master
 jobs:
     first-job:
         runs-on: ubuntu-latest
