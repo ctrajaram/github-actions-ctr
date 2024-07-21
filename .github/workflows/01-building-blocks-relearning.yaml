@@ -1,8 +1,12 @@
 name: 01- Building Blocks
-on: [workflow_dispatch, push]
+on: 
+    workflow_dispatch:
+    push:
+        branches:
+                - main
+                - master
 jobs:
     first-job:
-        name: echo-hello
         runs-on: ubuntu-latest
         steps:
             - name: Say hello
