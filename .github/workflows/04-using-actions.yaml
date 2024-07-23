@@ -1,0 +1,15 @@
+name: 04-using-actions-ctr
+on:
+    push:
+        branches:
+            - main
+    workflow_dispatch:
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout Code
+              uses: actions/checkout@v4
+            - name: Printing folders
+              run: |
+                    ls -l
