@@ -34,21 +34,6 @@ jobs:
                     echo "MY_WORKFLOW_VAR:  ${{ env.MY_WORKFLOW_VAR }}!"
                     echo "MY_JOB_VAR:  ${{ env.MY_JOB_VAR }}!"
                     echo "MY_OVERWRITTEN_VAR:  ${{ env.MY_OVERWRITTEN_VAR }}!"
-                    
-            - name: Print Env Variables
-              env:
-                    MY_OVERWRITTEN_VAR: "step"
-              run: |
-                        echo "MY_WORKFLOW_VAR:  ${{ env.MY_WORKFLOW_VAR }}!"
-                        echo "MY_JOB_VAR:  ${{ env.MY_JOB_VAR }}!"
-                        echo "MY_OVERWRITTEN_VAR:  ${{ env.MY_OVERWRITTEN_VAR }}!"
-            - name: Print Env Variables
-              env:
-                    MY_OVERWRITTEN_VAR: "step"
-              run: |
-                        echo "MY_WORKFLOW_VAR:  ${{ env.MY_WORKFLOW_VAR }}!"
-                        echo "MY_JOB_VAR:  ${{ env.MY_JOB_VAR }}!"
-                        echo "MY_OVERWRITTEN_VAR:  ${{ env.MY_OVERWRITTEN_VAR }}!"  
             - name: Print Env Variables again
               env:
                     MY_OVERWRITTEN_VAR: "step"
