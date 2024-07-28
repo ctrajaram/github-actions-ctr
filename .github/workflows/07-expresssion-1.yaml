@@ -21,7 +21,7 @@ jobs:
                  echo "SHA: ${{ github.sha }}"
                  echo "Runner os: ${{ runner.os }}"
             - name: '[debug] Print start-up data'
-              if: ${{ inputs.debug }} && ${{ github.ref }} == 'refs/heads/main' 
+              if: ${{ inputs.debug && github.ref == 'refs/heads/main' }}
               shell: bash
               run: |
                  echo ""I was triggered from main""
