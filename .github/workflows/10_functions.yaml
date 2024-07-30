@@ -12,15 +12,15 @@ jobs:
       - name: 'Failing step'
         run:  exit 1
       - name: 'I will be skipped'
-        if: ${{ success() }}
+        if: success()
         run: echo "I will print if any previous step succeeds."
       - name: 'I will be execute'
-        if: ${{ failure() }}
+        if: failure()
         run: echo "I will print if any previous step fails."
       - name: 'I will execute'
-        if: ${{ cancelled() }}
+        if: cancelled()
         run: echo "I will always print if workflow has been cancelled."
       - name:  'I will execute'
-        if: ${{ !cancelled() }}
+        if: ! cancelled()
         run: echo "I will print if not cancelled"
       
