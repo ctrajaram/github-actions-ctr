@@ -1,4 +1,4 @@
-name: '09-functions.yaml'
+name: 10-functions_yaml
 on:
   pull_request:
   push:
