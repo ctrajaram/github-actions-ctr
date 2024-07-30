@@ -1,0 +1,9 @@
+name: 08-variables.yaml
+on:
+  # push:
+  #   branches:
+  #     - main
+  workflow_dispatch:
+env:
+     WORKFLOW_VAR = 'I am a workflow env var' 
+     OVERWRITTEN = 'I will be overwritten'
