@@ -1,4 +1,4 @@
-name: 08-variables.yaml
+name: 08-variables-yaml
 on:
   # push:
   #   branches:
