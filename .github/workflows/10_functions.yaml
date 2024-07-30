@@ -13,6 +13,8 @@ jobs:
         run: echo "I will print if any previous step fails."
       - name: 'I will execute'
         if: failed()
+        run: echo "I will execute if previous steps failed."
       - name:  'I will execute'
         if: ! cancelled()
+        run: echo "I will execute if not cancelled"
       
