@@ -1,7 +1,7 @@
 name: 10-functions_yaml
 on:
   pull_request:
-  push:
+  #push:
   workflow_dispatch:
 jobs:
   echo1:
