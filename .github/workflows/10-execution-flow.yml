@@ -1,0 +1,30 @@
+name: 10 - Controlling the Execution Flow
+on:
+  - push:
+    workflow_dispatch:
+inputs:
+  pass-unit-tests:
+    type: boolean
+    required: true
+    description: "pass unit test"
+    default: false
+
+jobs:
+  lint-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Lint and build
+        run: |
+          echo "Linting and building project"
+  unit-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Running unit tests
+        run: echo "Running tests..."
+      - name: Failing tests
+        if: ${{ inputs.pass-unit-tests }}
+        run: |
+          exit 1
+        
+
+
