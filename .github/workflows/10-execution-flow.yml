@@ -6,7 +6,7 @@ on:
           type: boolean
           required: true
           description: "pass unit test"
-          default: false
+          default: true
     workflow_dispatch:
 
 
