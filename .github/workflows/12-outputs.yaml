@@ -1,4 +1,4 @@
-name: 12 - Working with outputs
+name: "12 - Working with outputs"
 on:
   workflow_dispatch:
     inputs:
