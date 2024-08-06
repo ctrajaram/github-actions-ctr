@@ -7,9 +7,6 @@ on:
           required: true
           description: "pass unit test"
           default: false
-    workflow_dispatch:
-
-
 jobs:
   lint-build:
     runs-on: ubuntu-latest
