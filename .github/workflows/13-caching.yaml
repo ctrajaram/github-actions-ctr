@@ -1,7 +1,7 @@
 name: "13 - using caching"
 on:
   workflow_dispatch:
-    input:
+    inputs:
       use-cache:
         type: boolean
         description: Whether to execute cache step
